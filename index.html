@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
+    <script>
+        function redirect() {
+            const currentUrl = new URL(window.location.href);
+            const params = currentUrl.search;
+
+    
+        }
+
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <h2>Redirecting...</h2>
+    <p>This page has been moved. If you have not been moved automatically click the button below</p>
+
+    <form action="https://kakhil2004.github.io/portfolio/?comp=redirect">
+        <input type="submit" value="Go to Akhil's Portfolio website" />
+    </form>
+</body>
+</html>
