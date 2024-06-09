@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
     <script>
         function redirect() {
-            const currentUrl = new URL(window.location.href);
-            const params = currentUrl.search;
-
-            const newUrl = 'https://kakhil2004.github.io/portfolio/' + params;
-            window.location.href = newUrl;
+            setTimeout(() => {
+                const currentUrl = new URL(window.location.href);
+                const params = currentUrl.search;
+                
+                const newUrl = 'https://kakhil2004.github.io/portfolio/' + params;
+                window.location.href = newUrl;
+            }, 1000)
+            
         }
 
         window.onload = redirect;
