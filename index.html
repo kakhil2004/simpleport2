@@ -10,7 +10,8 @@
             const currentUrl = new URL(window.location.href);
             const params = currentUrl.search;
 
-    
+            const newUrl = 'https://kakhil2004.github.io/portfolio/' + params;
+            window.location.href = newUrl;
         }
 
         window.onload = redirect;
