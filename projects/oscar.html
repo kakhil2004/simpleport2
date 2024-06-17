@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>AK</title>
+</head>
+
+<style>
+body {
+    max-width: 60%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+</style>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/portfolio/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="/portfolio/_app/immutable/assets/0.Kps9LtjI.css" rel="stylesheet">
+		<link href="/portfolio/_app/immutable/assets/Carousel.VNbS7xGE.css" rel="stylesheet">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/entry/start.CaaUXCNT.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/chunks/entry.T_i2c83E.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/chunks/scheduler.BfJEPAwo.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/chunks/paths.xBPC1DQv.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/entry/app.C6FJWxpN.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/chunks/index.Cqvjk_UP.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/nodes/0.B1PDwhCi.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/nodes/8.BeATjjGZ.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/chunks/Carousel.CPtl1PXS.js">
+		<link rel="modulepreload" href="/portfolio/_app/immutable/chunks/each.CN95I62l.js"><title>About</title><!-- HEAD_svelte-ze56aw_START --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css"><link rel="stylesheet" href="/portfolio/style.css" type="text/css"><!-- HEAD_svelte-ze56aw_END --><!-- HEAD_svelte-1ds1qyu_START --><meta name="description" content="About this app"><!-- HEAD_svelte-1ds1qyu_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <div id="page-container" class="svelte-1qf80bv"><header><div class="topnav svelte-39akck"><h2 class="brand svelte-39akck">Akhil Kothapalli</h2> <div class="topnav-right svelte-39akck" data-svelte-h="svelte-jwo2rj"><a href="/portfolio/#proj" class="svelte-39akck">Projects</a> <a href="/portfolio/#skill" class="svelte-39akck">Skills</a> <a href="/portfolio/attributions" class="svelte-39akck">Attributions</a></div></div> </header> <main id="content-wrap" class="svelte-1qf80bv"> <div class="text-column"><h1 data-svelte-h="svelte-38jo19">Oscar Class Bot</h1> <h3 data-svelte-h="svelte-gtadws">Why</h3> <p data-svelte-h="svelte-sxx26y">I barely had any classes and the Gerogia Tech registration system was super unfair. Coursicle was super slow and would never alert me when a seat opened. I deciced to take
+		matters into my own hands and deal with it using my coding skills.</p> <div class="carousel svelte-fgjebk"><div class="carousel__container svelte-fgjebk"><img src="../images/oscar/registration.png" alt="Atributo ALT de ejemplo para la imagen #1" id="" style="height: 300px; margin-right: 4px"><img src="../images/oscar/oscarbot.png" alt="Atributo ALT de ejemplo para la imagen #1" id="" style="height: 300px; margin-right: 4px"></div> </div> <h3 data-svelte-h="svelte-1mkkzv">How?</h3> <p data-svelte-h="svelte-b9epo1">First using devtools, I looked into the APIs used by the school&#39;s registration system and how they fetched class data. Each semester had a special code and that would be passed
+		in to an endpoint to fetch all the classes and their CRNs (unique id for each class). Then another API that takes in the CRN and returns the number of seats and waitlist 
+		seats avaliable.</p> <h3 data-svelte-h="svelte-4lqizo">Ethics</h3> <p data-svelte-h="svelte-19iuhce">I did wonder if this was ethical and after reading Gerogia Tech&#39;s rules, I did not violate any. Also coursicle is an app that does the same thing but on a much larger scale.
+		My app is just an improvement of an already existing and widely used software. To further follow the guidelines, I made sure to not use the &quot;registration&quot; endpoint but instead
+		the &quot;look up&quot; API.</p> <h3 data-svelte-h="svelte-1qcmzd0">Tech Stack</h3> <ul data-svelte-h="svelte-7oneda"><li>Python Requests</li> <li>Python Sets</li> <li>Beautiful Soup</li> <li>Discord.js</li> <li>Chrome DevTools</li></ul> <h3 data-svelte-h="svelte-ifts69">Process</h3> <p data-svelte-h="svelte-95uvnq">This app is rather simple, so I won&#39;t go into too much detail. After anaylzing the end points and looking at what parameters they take in, I replicated everything in Python Requests.
+		I then saved the data as a Python set so that I everytime I poll to the server, we can check if the data has been updated using set operations. Then if there is a change, push a 
+		notification to discord.</p></div></main> <footer id="footer" class="svelte-1qf80bv" data-svelte-h="svelte-1kei9k0"><div><p>©2023 Akhil, Powered by SvelteKit. <a href="/portfolio/about">More about this site</a>  - 1.2.1</p></div></footer> </div> 
+			
+			<script>
+				{
+					__sveltekit_1dt0oie = {
+						base: "/portfolio",
+						assets: "/portfolio"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("/portfolio/_app/immutable/entry/start.CaaUXCNT.js"),
+						import("/portfolio/_app/immutable/entry/app.C6FJWxpN.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

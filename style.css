@@ -1,0 +1,246 @@
+body {
+    max-width: 60%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the brand (Akhil Kothapalli) on the left */
+.topnav .brand {
+  font-size: 25px;
+  margin: 0;
+  padding: 10px 16px;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  display: flex;
+}
+
+/* Style the links on the right */
+.topnav-right a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 14px 16px;
+}
+
+/*Deals with the bio part */
+img.bio {
+    border-radius: 30px;
+}
+
+/* styles.css */
+
+
+.page-container {
+    min-height: 100vh;
+}
+
+.content-container {
+    display: flex;
+    margin-bottom: 50px auto;
+
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container {
+    margin-top: 50px;
+    flex: 1;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.box-container {
+    display: flex;
+    margin-bottom: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-height: 80%;
+    padding: 30px;
+    overflow: auto;
+}
+
+.box {
+    flex: 0 0 calc(27% - 20px);
+    
+    border: 3px solid #4A4A4A; 
+    border-radius: 10px ;
+    padding: 20px;
+    font-size: 1.5vh;
+    cursor: default;
+}
+
+.box-container-skills {
+    display: flex;
+    margin-bottom: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-height: 80%;
+    padding: 30px;
+    overflow: auto;
+}
+
+.box-skills {
+
+ 
+    padding: 20px;
+    font-size: 80%;
+    cursor: default;
+}
+
+.box-skills:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+img.icon {
+    margin-right: 15px;
+    border-radius: 10px;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+a.nostyle:hover {
+    border-bottom: 0px;
+}
+
+@media screen and (min-width:320px) and (max-width:640px) {
+    body {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-basis: calc(100% - 20px); /* Two elements per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex-basis: calc(100% - 20px); /* One element per row for even smaller screens */
+    }
+}
+
+
+#scrollToTopBtn {
+    display: none; /* Hide button by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Adjust distance from the bottom as needed */
+    right: 20px; /* Adjust distance from the right as needed */
+    z-index: 99; /* Ensure button appears above other content */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+#scrollToTopBtn:hover {
+background-color: #0056b3; /* Darker background color on hover */
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  /* Popup content */
+  .popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+  }
+
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Stuff for project page*/
+
+.projImg {
+    width: 40%;
+}
+
+
+.tiny-box-container {
+    display: flex;
+    margin: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-height: 80%;
+    padding: 30px;
+    overflow: auto;
+
+}
+
+.tiny-box {
+    flex: 0 0 calc(15% - 20px);
+    
+    border: 3px solid #4A4A4A; 
+    border-radius: 10px ;
+    padding: 20px;
+    font-size: 1.5vh;
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    .tiny-box {
+        flex-basis: calc(100% - 20px); /* Two elements per row for smaller screens */
+    }
+}
+
+.tiny-box:hover {
+    cursor: pointer;
+}
+
